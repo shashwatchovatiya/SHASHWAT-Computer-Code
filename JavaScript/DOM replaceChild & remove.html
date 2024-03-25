@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replaceChild & remove</title>
+</head>
+<body>
+     <div id="UlList">
+        <ul id="List">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact Us</li>
+            <li>Folloe me</li>
+            <li> Mobile.no</li>
+
+        </ul>
+
+        <ul id="List1">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact Us</li>
+            <li>Folloe me</li>
+            <li> Mobile.no</li>
+
+        </ul>
+     </div>
+
+
+     <script>
+
+        // replaceChild Methode 
+
+
+
+           var a = document.createElement('li');
+
+        var b = document.createTextNode('Hello My Name is Shashwat');
+
+        a.appendChild(b);
+
+        var Target = document.getElementById('List');
+        var Shashwat = Target.children[2];
+
+        Target.replaceChild(a,Shashwat);
+
+
+        // RemoveChild Methode 
+
+        var target = document.getElementById('List1');
+        var shashwat = target.children[4];
+
+        target.removeChild(shashwat);
+
+     </script>
+</body>
+</html> 

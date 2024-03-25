@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            counter-reset: section;
+        }
+        h1::before{
+
+            content: "Section" counter(section) " : ";
+            counter-increment: section;
+        }
+        h2::before{
+            content: counter(section) "." counter(subsection) " : ";
+            counter-increment: subsection;
+        }
+        ::selection{
+            background-color: black;
+            color: yellow;
+        }
+        ul{
+            list-style-type:'✌     ';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>HTML</h1>
+
+        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, provident!</h2>
+
+        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, provident!</h2>
+
+        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, provident!</h2>
+
+        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, provident!</h2>
+
+        <hr>
+
+    <h1>CSS</h1>
+
+        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, provident!</h2>
+
+        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, provident!</h2>
+
+        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, provident!</h2>
+
+        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, provident!</h2>
+
+        <hr>
+         
+    <h1>JAVASCRIPT</h1>
+
+        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, provident!</h2>
+
+        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, provident!</h2>
+
+        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, provident!</h2>
+
+        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, provident!</h2>
+
+<hr><hr>
+
+
+
+<!-- CSS List-Style-Type String e juda juda icon us karva thay -->
+        <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+</body>
+</html>

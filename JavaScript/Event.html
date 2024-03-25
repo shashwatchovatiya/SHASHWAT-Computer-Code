@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<style>
+    .button{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+       
+    }
+    .btn{
+        padding: 10px 15px;
+    }
+</style>
+
+<body>
+    <div class="button">
+        <button class="btn" onclick="Click();">Cilk Me</button><br><br>
+        <button class="btn" ondblclick="DoubleClick();">DoubleClick</button><br><br>
+        <button class="btn" oncontextmenu="Rightclick();">Rightclick</button><br><br>
+        <button class="btn" onmouseenter="MouseHover();">MouseHover</button><br><br>
+        <button class="btn" onmouseout="MouseOut();">MouseOut</button><br><br>
+        <button class="btn" on>Cilk Me</button><br><br>
+        <button class="btn" on>Cilk Me</button><br><br>
+        <button class="btn" on>Cilk Me</button><br><br>
+        <button class="btn" on>Cilk Me</button><br><br>
+    </div>
+
+    <script>
+        function Click() {
+            alert("Hello My Name Is Shashwat");
+        }
+        function DoubleClick(){
+            document.write("Hello I Am DoubleClick");
+        }
+        function Rightclick(){
+            alert("Hello I Am Rightclick");
+        }
+        function MouseHover(){
+            alert("Hello I Am MouseHover");
+        }
+        function MouseOut(){
+            alert("Hello I Am MouseOut");
+        }
+        function MouseDown(){
+            alert("Hello I Am MouseDown");
+        }
+    </script>
+</body>
+
+</html>

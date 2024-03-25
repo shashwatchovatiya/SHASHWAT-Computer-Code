@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox - Align Form Elements</title>
+    <style>
+        #shashwat {
+            background-color: bisque;
+            list-style: none;
+            margin: 100px;
+            padding: 25px;
+        }
+
+        #shashwat li {
+            display: flex;
+            padding: 10px 0;
+            justify-content: flex-end;
+        }
+
+        #shashwat li label {
+            flex: 1;
+        }
+
+        /* #shashwat li input {
+            flex: 8;
+        } */
+    
+        @media screen and (min-width:1300) {
+            #shashwat li input {
+            flex: 8;
+        }
+        }
+        @media screen and (min-width:992) {
+            #shashwat li input {
+            flex: 6;
+        }
+        }    @media screen and (min-width:768) {
+            #shashwat li input {
+            flex: 3;
+        }
+        }    @media screen and (min-width:500) {
+            #shashwat li input {
+            flex: 2;
+        }
+        }
+        
+   
+
+        @media screen and (min-width:300px) and (max-width:499px) {
+          
+      #shashwat li{
+        flex-direction: column;
+        background-size: 80%;
+        
+      }
+      #shashwat li input{
+        flex: 3;
+        width: 110px;
+      
+      }
+    }
+    
+    </style>
+</head>
+
+<body>
+    <form action="/">
+        <ul id="shashwat">
+
+            <li>
+                <label for="Name">Name</label>
+                <input type="text" placeholder="Enter Your Full Name">
+            </li>
+
+            <li>
+                <label for="CLassname">Class Name</label>
+                <input type="text" placeholder="Enter the class name you are studying in">
+            </li>
+
+            <li>
+                <label for="Email">Email</label>
+                <input type="email" placeholder="Enter Your Email">
+            </li>
+
+            <li>
+                <button type="submit">
+                <a href="https://yomovies.city/" target="_blank">submit</a>
+            </button>
+            </li>
+
+        </ul>
+    </form>
+</body>
+
+</html>

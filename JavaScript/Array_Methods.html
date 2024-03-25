@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+
+<body>
+    <script>
+
+        // Sort() function ==>
+
+        var a = [" Shashwat ", " Dhrumil ", " Mitanshu ", " Jaimeen "];
+
+        document.write(a + "<br>");
+        a.sort();
+        document.write(a + "<br><br>");
+
+        // Reverse() function ==>
+
+        var b = [" Shashwat ", " Dhrumil ", " Mitanshu ", " Jaimeen "];
+
+        document.write(b + "<br>");
+        b.reverse();
+        document.write(b + "<br><br>");
+
+
+        // Pop() function ==>
+
+        var a = [" Shashwat ", " Dhrumil ", " Mitanshu ", " Jaimeen "];
+
+        document.write(a + "<br>");
+        a.pop();
+        document.write(a + "<br><br>");
+
+        // Push() function ==>
+
+        var a = [" Shashwat ", " Dhrumil ", " Mitanshu "];
+
+        a.push("Rahul");
+        document.write(a + "<br>");
+        a.push("Salman");
+        document.write(a + "<br><br>");
+
+        // Shift() function ==>
+
+        var a = [" Shashwat ", " Dhrumil ", " Mitanshu ", " Jaimeen "];
+
+        document.write(a + "<br>");
+        a.shift();
+        document.write(a + "<br><br>");
+
+        // UnShift() function ==>
+
+        var a = [" Dhrumil ", " Mitanshu ", " Jaimeen "];
+
+        document.write(a + "<br>");
+        a.unshift("Rahul");
+        document.write(a + "<br><br>");
+
+        // concat() function ==>
+
+        var a = [" Shashwat ", " Dhrumil ", " Mitanshu "];
+        var b = ["Rahul", " Jaimeen "];
+        var c = ["Neha", "Mahima"];
+        var d = a.concat(b, c);
+
+        document.write(d);
+
+        // join() function ==>
+
+        var a = [" Dhrumil ", " Mitanshu ", " Jaimeen "];
+        var b = ["Rahul", " Shashwat "];
+        var c = a.concat(b);
+        document.write(c + "<br><br>");
+        var d = c.join(" / ");
+        document.write(d + "<br><br>");
+
+
+        // Slice() function ==>
+
+        var a = [" Shashwat ", " Dhrumil ", " Mitanshu ", "Rahul", " Jaimeen "];
+        document.write(a + "<br>");
+        var b = a.slice(1, 5);
+        document.write(b + "<br><br>");
+
+        // Splice() function  ==>
+
+        var a = [" Shashwat ", " Dhrumil ", " Mitanshu ", "Rahul"];
+        document.write(a + "<br>");
+        a.splice(2, 1, "Neha", " Jaimeen ");
+        document.write(a + "<br><br>");
+
+        // isArray() function ==>
+
+        var a = [" Shashwat ", " Dhrumil ", " Mitanshu "];
+        document.write(a + "<br>");
+        var b = Array.isArray(a);
+        document.write(b + "<br><br>");
+
+        // Extra example ==>  isArray with if condition ==>
+
+        var a = [" Shashwat ", " Dhrumil ", " Mitanshu "];
+        // document.write(a + "<br>");
+        if (Array.isArray(a)) {
+            document.write("This is an Array  <br><br>");
+        } else {
+            document.write("This is not an Array  <br><br>");
+        }
+
+        // indexOf() function ==>
+
+        var a = [" Shashwat ", " Dhrumil ", " Mitanshu ", " Dhrumil ", "Rahul"];
+        document.write(a + "<br>");
+        var b = a.indexOf(" Shashwat ", 0);
+        document.write(b + "<br><br>");
+
+
+        // lastindexOf() function ==>
+
+        var a = [" Shashwat ", " Dhrumil ", " Mitanshu ", "Rahul", " Dhrumil "];
+        document.write(a + "<br>");
+        var c = a.lastIndexOf(" Dhrumil ", 3);
+        document.write(c + "<br><br>");
+
+
+        // includes() function
+
+        var a = [" Shashwat ", " Dhrumil ", " Mitanshu ", " Shashwat "];
+        document.write(a + "<br><br>");
+
+        var b = a.includes("Neha");
+        document.write(b + "<br>");
+
+        var c = a.includes(" Dhrumil ");
+        document.write(c + "<br>");
+
+        var d = a.includes(" Shashwat ");
+        document.write(d + "<br>");
+
+        var e = a.includes(" Dhrumil ");
+        document.write(e + "<br><br>");
+
+
+        //  some() function
+
+        var ages = [10, 13, 18, 2];
+        document.write(ages + "<br>");
+
+        var b = ages.some(checkAdult);
+        document.write(b + "<br><br>");
+
+        function checkAdult(age) {
+            return age >= 18;
+        }
+
+        // Every() Function
+
+        var ages = [12, 19, 18, 20];
+        document.write(ages + "<br>");
+
+        var b = ages.every(checkAdult);
+        document.write(b + "<br><br>");
+
+        function checkAdult(age) {
+            return age >= 18;
+        }
+
+        // find() function
+
+        var ages = [10, 25, 19, 20];
+        document.write(ages + "<br>");
+
+        var b = ages.find(checkAdult);
+        document.write(b + "<br><br>");
+
+        function checkAdult(age) {
+            return age >= 18;
+        }
+
+
+        // findIndex() function
+
+        var ages = [10, 12, 23, 20];
+        document.write(ages + "<br>");
+
+        var b = ages.findIndex(checkAdult);
+        document.write(b + "<br><br>");
+
+        function checkAdult(age) {
+            return age >= 18;
+        }
+
+        // fillter() function
+
+        var ages = [10, 25, 19, 20];
+        document.write(ages + "<br>");
+        var b = ages.filter(checkAdult);
+        document.write(b + "<br><br>");
+
+        function checkAdult(age) {
+            return age >= 18;
+        }
+
+        // toString() function
+
+        var a = ["Rahul", "Karan", "Aman", "Neha"];
+        a.toString();
+        document.write(a + "<br><br>");
+
+        // valueOf() function
+
+        var a = ["Rahul", "Karan", "Aman", "Neha"];
+        document.write(a.valueOf() + "<br><br>");
+
+        // fill() function
+
+        var a = ["Rahul", "Karan", "Aman", "Neha"];
+        a.fill(" Shashwat ");
+        document.write(a +"<br><br>");
+
+        // ForEach Loop() function methode = 1
+
+        var a = ["Rahul", "Karan", "Aman", "Neha"];
+        a.forEach(function (value, index ) {
+            document.write(index + " : " + value + "<br>");
+        })
+        document.write("<br><br>")
+        // ForEach Loop() function methode = 2
+
+        var a = ["Rahul", "Karan", "Aman", "Neha"];
+        a.forEach(loop);
+        function loop(value, index) {
+            document.write(index + " : " + value + "<br>");
+        }
+        document.write("<br><br>");
+
+
+        // Map() function 
+         var a =[11,21,14,65,34];
+         var b = a.map(shashwat);
+         document.write(b);
+
+         function shashwat(c) {
+            return c * 22;
+         }
+         document.write("<br><br>");
+
+
+         
+    </script>
+</body>
+
+</html> 

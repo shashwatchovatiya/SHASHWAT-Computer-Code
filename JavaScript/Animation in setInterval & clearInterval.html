@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in setInterval & clearInterval</title>
+</head>
+<style>
+    #div1 {
+        width: 150px;
+        height: 150px;
+        background: red;
+    }
+</style>
+
+<body>
+    <div id="div1"></div>
+
+    <script>
+        var a = 0;
+        var b = setInterval(abc, 100);
+
+
+
+        function abc() {
+            a = a + 10;
+            if (a == 1000) {
+                clearInterval(b)
+            } else {
+                var x = document.getElementById('div1');
+                x.style.marginLeft = a + 'px';
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>

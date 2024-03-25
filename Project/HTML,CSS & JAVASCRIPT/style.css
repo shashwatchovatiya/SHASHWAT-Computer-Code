@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: bisque;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/************************* Hedaer section  *******************/
+
+#header{
+    background-color: black;
+    color: #ffffff;
+}
+#header_ul{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    gap: 10px;
+}
+#header_ul li{
+    list-style: none;
+    justify-content:center ;
+    cursor: pointer;
+}
+.ul_li{
+    font-weight: lighter;
+    font-size: small;
+}
+#logo_png{
+ display: contents;
+}
+#logo_png span h3{
+    font-weight: 900;
+}
+#header_ul li img{
+    width: 40px;
+}
+
+/******************************* Main section ***********************/
+#main_1{
+    margin: 30px auto;
+    background-color: #000;
+    color: #ffffff;
+    width: 80%;
+    border-radius: 15px;
+    padding: 20px ;
+    display: flex;
+    background-image: url(./image/bg.jpg);
+}
+.songItem{
+    background-color: antiquewhite;
+    color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 5px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+.songItem i{
+    cursor: pointer;
+}
+.songItem img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+/****************** Footer Section  **************************/
+#footer{
+    background: #000;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+.song_info{
+    display: flex;
+    gap: 20px;
+}
+.song_info i{
+    cursor: pointer;
+}
+.play_puse_icon{
+    margin-left: 28vw;
+    grid-gap: 20px;
+
+}
+.input_rang{
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+}
+#Rang_for_song{
+    width: 80vw;
+}
+#playsongName{
+    margin-left: 170px;
+}
+.time{
+    margin-left: 30vw;
+}

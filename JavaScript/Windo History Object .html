@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Object</title>
+</head>
+
+<body>
+
+    <button onclick="assignButton()">Assign Button</button><br><br>
+    <button onclick="reloadButton()">Reload Button</button><br><br>
+    <button onclick="forwardFunction()">ForwardFunction</button><br><br> 
+    <button onclick="backFunction()">BackFunction</button><br><br> 
+    <button onclick="goFunction()">Go Button</button><br><br> 
+
+
+
+    <script>
+        // Location Property
+
+        document.write(location + "<br>");
+        document.write(location.hash + "<br>");
+        document.write(location.host + "<br>");
+        document.write(location.hostname + "<br>");
+        document.write(location.href + "<br>");
+        document.write(location.origin + "<br>");
+        document.write(location.pathname + "<br>");
+        document.write(location.port + "<br>");
+        document.write(location.protocol + "<br>");
+        document.write(location.search + "<br>");
+
+
+        // Location Methodes
+
+        function assignButton() {
+            location.assign("https://bollyflix.asia/");
+        }
+
+        function reloadButton() {
+            location.reload();
+        }
+        function replaceButton() {
+            location.replace("https://www.yahoobaba.net/javascript/js-location-object");
+        }
+
+
+        /* JavaScript Back Function*/
+        function backFunction() { history.back(); } 
+
+        /* JavaScript Forward Function*/
+        function forwardFunction() { history.forward(); }
+
+        /* JavaScript Go Function*/
+        function goFunction() { history.go(2); }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Append methode</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: tomato;
+        }
+
+        #test {
+            background: Tan;
+            width: 800px;
+            height: 100%;
+            padding: 10px 10px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: green;
+        }
+
+        span {
+            color: cadetblue;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Shashwat By Create: DOM Create Methods</h1>
+    <div id="test">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aperiam eos vel consequatur. Delectus
+            voluptas dolorem id exercitationem, ad ipsam consectetur hic ullam provident! Adipisci exercitationem ipsam
+            rerum sunt doloremque magni soluta, delectus maiores, sapiente quasi labore praesentium accusamus earum cum
+            nam saepe qui? Accusamus provident quo perferendis sint sed.</p>
+        <h3>Shashwat</h3>
+    </div>
+
+
+    <script>
+
+        // appendChild Methode 
+
+        var a = document.createElement('h1');
+        console.log(a);
+
+        var b = document.createTextNode('Hello My Name is Shashwat');
+        console.log(b);
+
+        a.appendChild(b);
+
+        document.getElementById('test').appendChild(a);
+
+
+        // insertBefore Methode 
+
+        var x = document.getElementById('test');
+        x.insertBefore(a, x.childNodes[0]);
+
+
+        // insertAdjacementElement Method 
+
+
+        var m = document.createElement('h2');
+        var n = document.createTextNode('Hii i am insertAdjacementElement');
+        m.appendChild(n);
+        var y = document.getElementById('test');
+        // y.insertAdjacentElement("afterend",m);
+        // y.insertAdjacentElement("afterbegin",m);
+        // y.insertAdjacentElement("beforebegin",m);
+        y.insertAdjacentElement("beforeend", m);
+
+
+
+        // insertAdjacementHTML Method 
+
+        var Rajat = document.getElementById('test');
+        var New = "<span>Jay Mahakal</span>";
+        Rajat.insertAdjacentHTML("afterbegin", New);
+
+
+
+        // insertAdjacementTEXT Method 
+
+        var Rajat = document.getElementById('test');
+        var NewText = "Har Har Mahadev";
+        Rajat.insertAdjacentText("beforeend", NewText);
+
+    </script>
+</body>
+
+</html>

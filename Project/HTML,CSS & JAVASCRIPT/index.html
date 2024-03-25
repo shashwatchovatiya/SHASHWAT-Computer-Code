@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Project</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"
+        integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+        integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="header">
+        <ul id="header_ul">
+            <li id="logo_png">
+                <img src="./image/logo.png" alt="logo">
+                <span>
+                    <h3> Spotify </h3>
+                </span>
+            </li>
+            <li class="ul_li">Home</li>
+            <li class="ul_li">About</li>
+        </ul>
+    </nav>
+
+
+    <div id="main_1">
+        <div id="row_1">
+
+            <h2>Best Of NCS - No Copyright song</h2>
+            <div id="SongitemContiner">
+                <div class="songItem">
+                    <img src="./covers/1.jpg" alt="1 song">
+                    <span>Love Me Like You Do</span>
+                    <span>5:00</span>
+                    <i class="fa-solid fa-circle-play songItemPlay" id="0"></i>
+                </div>
+                <div class="songItem">
+                    <img src="./covers/2.jpg" alt="2 song">
+                    <span>Runak Jhunak </span>
+                    <span>5:00</span>
+                    <i class="fa-solid fa-circle-play songItemPlay" id="1"></i>
+                </div>
+                <div class="songItem">
+                    <img src="./covers/3.jpg" alt="3 song">
+                    <span>Yeh Raate Ye Mausam</span>
+                    <span>5:00</span>
+                    <i class="fa-solid fa-circle-play songItemPlay" id="2"></i>
+                </div>
+                <div class="songItem">
+                    <img src="./covers/4.jpg" alt="4 song">
+                    <span>Brown Rang</span>
+                    <span>5:00</span>
+                    <i class="fa-solid fa-circle-play songItemPlay" id="3"></i>
+                </div>
+                <div class="songItem">
+                    <img src="./covers/5.jpg" alt="5 song">
+                    <span>Desi kalakar</span>
+                    <span>5:00</span>
+                    <i class="fa-solid fa-circle-play songItemPlay" id="4"></i>
+                </div>
+                <div class="songItem">
+                    <img src="./covers/6.jpg" alt="6 song">
+                    <span>Blue eyes</span>
+                    <span>5:00</span>
+                    <i class="fa-solid fa-circle-play songItemPlay" id="5"></i>
+                </div>
+                <div class="songItem">
+                    <img src="./covers/7.jpg" alt="7 song">
+                    <span>Manali Trance</span>
+                    <span>5:00</span>
+                    <i class="fa-solid fa-circle-play songItemPlay" id="6"></i>
+                </div>
+                <div class="songItem" style="padding: 14px;">
+                    <img src="./covers/8.jpg" alt="8 song">
+                    <span>People X Naino Vale Ne</span>
+                    <span>5:00</span>
+                    <i class="fa-solid fa-circle-play songItemPlay" id="7"></i>
+                </div>
+                <div class="songItem">
+                    <img src="./covers/9.jpg" alt="9 song">
+                    <span>Dev Dwarka No Nath</span>
+                    <span>5:00</span>
+                    <i class="fa-solid fa-circle-play songItemPlay" id="8"></i>
+                </div>
+                <div class="songItem">
+                    <img src="./covers/10.jpg" alt="10 song">
+                    <span>Rabbta</span>
+                    <span>5:00</span>
+                    <i class="fa-solid fa-circle-play songItemPlay" id="9"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="row_2"></div>
+
+    </div>
+
+
+    <footer id="footer">
+        <div class="input_rang">
+            <input type="range" name="" id="Rang_for_song" min="0" value="0" max="100" >
+        </div>
+
+            <div class="song_info">
+                <span id="playsongName">Love Me Like You Do</span>
+                <div class="play_puse_icon">
+
+                    <i class="fa-solid fa-2x fa-backward-fast" id="previous"></i>
+                    <i class="fa-solid fa-circle-play fa-2x " id="masterPlay"></i>
+                    <i class="fa-solid fa-2x fa-forward-fast" id="next"></i>
+                </div>
+                <span class="time">5:00</span>
+            </div>
+
+    </footer>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

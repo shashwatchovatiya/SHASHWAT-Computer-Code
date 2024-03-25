@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashwat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="bg-[#b2b2b2] h-[85vh] text-white" id="Home">
+        <div class="md:flex justify-between container  m-auto py-5" id="header_1">
+            <div class="">
+                <h1 class="text-2xl md:text-4xl ">Kiddy.</h1>
+            </div>
+            <div class="flex gap-5">
+                <div class="flex gap-2">
+                    <i class="fa-solid fa-location-dot text-yellow-500 text-2xl"></i>
+                    <div class="">
+                        <p> 34 Street Name, City Name Here, </p>
+                        <p> United States </p>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <i class="fa-regular fa-clock text-red-500 text-2xl"></i>
+                    <div class="">
+                        <p>Sunday - Friday 8:00AM - 4:00PM </p>
+                        <p>Saturday CLOSED </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="bg-white shadow-lg container m-auto md:rounded-full">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-between">
+                    <div class="flex space-x-7">
+                        <div>
+                            <!-- Website Logo -->
+                            <a href="#" class="flex items-center gap-5  md:hidden py-4 px-2">
+                                <i class="fa-brands fa-facebook-f hover:text-red-500 text-black transti duration-150 text-xl"></i>
+                                <i class="fa-brands fa-twitter hover:text-red-500 text-black transti duration-150 text-xl"></i> 
+                                <i class="fa-brands fa-linkedin hover:text-red-500 text-black transti duration-150 text-xl"></i>
+                            </a>
+                        </div>
+                        <!-- Primary Navbar items -->
+                        <div class="hidden md:flex items-center space-x-1">
+                            <a href="#Home"
+                                class="py-4 px-2 text-red-500 border-b-4 hover:text-red-500 border-red-500 font-semibold ">Home</a>
+                            <a href="#About"
+                                class="py-4 px-2 text-gray-500 font-semibold hover:text-red-500 transition duration-300">About</a>
+                            <a href="#Packege"
+                                class="py-4 px-2 text-gray-500 font-semibold hover:text-red-500 transition duration-300">Packege</a>
+                            <a href="#Gallery"
+                                class="py-4 px-2 text-gray-500 font-semibold hover:text-red-500 transition duration-300">Gallery</a>
+                            <a href="#Pricing"
+                                class="py-4 px-2 text-gray-500 font-semibold hover:text-red-500 transition duration-300">Pricing</a>
+                            <a href="#Contact"
+                                class="py-4 px-2 text-gray-500 font-semibold hover:text-red-500 transition duration-300">Contact</a>
+    
+                        </div>
+                    </div>
+                    <!-- Secondary Navbar items -->
+                    <div class="hidden md:flex items-center justify-evenly md:w-1/5 ">
+                        <i class="fa-brands fa-facebook-f text-black text-xl hover:text-red-500 cursor-pointer"></i>
+                        <i class="fa-brands fa-twitter text-black text-xl hover:text-red-500 cursor-pointer"></i>
+                        <i class="fa-brands fa-linkedin text-black text-xl hover:text-red-500 cursor-pointer"></i>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="outline-none mobile-menu-button">
+                            <svg class=" w-6 h-6 text-gray-500 hover:text-red-500 " x-show="!showMenu" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+                <ul class="">
+                    <li class="active"><a href="index.html"
+                            class="block text-sm px-2 py-4 text-white bg-red-500 hover:text-white font-semibold">Home</a>
+                    </li>
+                    <li><a href="#services"
+                            class="block text-sm px-2 py-4 hover:bg-red-500 text-black hover:text-white transition duration-300">About</a>
+                    </li>
+                    <li><a href="#about"
+                            class="block text-sm px-2 py-4 hover:bg-red-500 text-black hover:text-white transition duration-300">Packege</a>
+                    </li>
+                    <li><a href="#contact"
+                            class="block text-sm px-2 py-4 hover:bg-red-500 text-black hover:text-white transition duration-300">Gallery</a>
+                    </li>
+                    <li><a href="#about"
+                            class="block text-sm px-2 py-4 hover:bg-red-500 text-black hover:text-white transition duration-300">Pricing</a>
+                    </li>
+                    <li><a href="#contact"
+                            class="block text-sm px-2 py-4 hover:bg-red-500 text-black hover:text-white transition duration-300">Contact
+                            Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div id="contant" class="container m-auto flex ">
+            <div class="flex flex-col h-[40vh]  justify-center w-1/3 space-y-3">
+                <h4 class=" font-sans text-red-500">Welcome To Our Website</h4>
+                <h1 class="text-xl md:text-5xl">Bring Fun Life To Your Kids</h1>
+                <p class="font-serif text-lg font-medium">Amazing Playground for your kids</p>
+                <button class="text-white bg-red-600 w-fit px-10 py-5 rounded-tl-3xl rounded-br-3xl ">Learn More</button>
+            </div>
+         
+        </div>
+        
+    </div>
+
+    <section>
+        <div
+            class="md:flex justify-center text-center align-middle items-center md:space-x-10 space-y-10 md:space-y-0 mt-56 px-5">
+            <div class="relative md:h-40 md:w-80 bg-red-500 text-center pt-12 text-white">
+                <p>Indoor Games</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nesciunt, mollitia, hic enim id
+                    culpa.</p>
+                <div
+                    class="absolute h-20 w-20 right-32 -top-8 bg-red-500 rounded-full flex items-center justify-center text-2xl">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+            </div>
+
+            <div class="relative md:h-40 md:w-80 bg-[#fdb62f] text-center pt-12 text-white">
+                <p>Outdoor Game And Event</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nesciunt, mollitia, hic enim id
+                    culpa.</p>
+                <div
+                    class="absolute h-20 w-20 right-32 -top-8 bg-[#fdb62f] rounded-full flex items-center justify-center text-2xl">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+
+            <div class="relative md:h-40 md:w-80 bg-[#16c3b0] text-center pt-12 text-white">
+                <p>Camping for Kids</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nesciunt, mollitia, hic enim id
+                    culpa. </p>
+                <div
+                    class="absolute h-20 w-20 right-32 -top-8 bg-[#16c3b0] rounded-full flex items-center justify-center text-2xl">
+                    <i class="fa-sharp fa-solid fa-gear "></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="bg-[#f6f5f5] mt-20" id="About">
+        <div class="md:flex container m-auto py-20">
+            <div class=" md:w-2/3 flex justify-center">
+                <!-- <img src="./image/img_1.jpg.webp" alt="" class="w-2/4 "> -->
+            </div>
+            <div class="md:w-1/3 px-5 mt-5 space-y-5">
+                <h4 class="text-red-600 font-light">About us</h4>
+                <h2 class="md:text-3xl text-xl">Bring Fun Life To Your Kids</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et harum, magni sequi nostrum maxime
+                    enim.Magnam id atque dicta deleniti, ipsam ipsum distinctio. Facilis praesentium voluptatem
+                    accusamus, earum veritatis, laudantium.</p>
+                <button
+                    class="text-white bg-yellow-500 w-fit px-10 py-5 rounded-tl-3xl rounded-br-3xl hover:bg-yellow-600 transition">More
+                    About Us</button>
+
+            </div>
+        </div>
+    </section>
+
+   
+    <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>

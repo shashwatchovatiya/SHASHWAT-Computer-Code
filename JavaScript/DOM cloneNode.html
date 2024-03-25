@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom cloneNode Method</title>
+</head>
+<body>
+    <!-- <div id="ListStyle">
+        <ul id="list-1">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact Us</li>
+            <li>Folloe me</li>
+            <li> Mobile.no</li>
+        </ul>
+        <ul id="list-2">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+
+    <script>
+       var target = document.getElementById('list-1').children[3];
+       var copy = target.cloneNode(true);
+    //    console.log(copy);
+        document.getElementById('list-2').appendChild(copy);
+    </script> -->
+
+
+    <ul id="list-1">
+        <li>Shashwat</li>
+        <li>Mitanshu</li>
+        <li>Dhrumil</li>
+        <li>Jaymin</li>
+    </ul>
+
+    <ul id="list-2">
+        <li>Shashwat</li>
+        <li>Mitanshu</li>
+    </ul>
+
+    <script>
+        var x = document.getElementById('list-1').children[0];
+        const d = x.cloneNode(true);
+        console.log(d);
+        document.getElementById('list-2').appendChild(d);
+    </script>
+</body>
+</html>

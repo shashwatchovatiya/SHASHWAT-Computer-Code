@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Aspect-Ratio</title>
+    <style>
+        body{
+            margin: 10px;
+            padding: 0;
+            /* display: inline; */
+        }
+        #test{
+            width: 400px ;
+            background-color: aqua;
+            border: 1px solid black;
+            aspect-ratio: 1/1;
+            float: right;
+            /* display: inline-block; */
+           
+        }
+        img{
+            width: 400px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            display: flex;
+         
+            align-items:self-start;
+            display: inline-block;
+            margin: 0 250px 0 0;
+        }
+        @media screen and (max-width: 800px) {
+                img{
+                    width: 100%;
+                }
+             
+        }
+    </style>
+</head>
+<body>
+    <div id="test">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur omnis accusamus, exercitationem hic architecto deleniti nemo consequatur ut sequi asperiores praesentium atque mollitia perferendis modi quos veniam a saepe fuga dolorem ab maxime! Laborum, itaque consectetur deserunt cum autem necessitatibus? Blanditiis, a debitis. Harum eligendi assumenda, quasi ab unde suscipit molestias. Esse magnam quidem aspernatur corporis molestias ratione vel dicta veritatis delectus enim. Neque distinctio facere officia provident ex, aliquam nostrum iure minus accusamus modi reiciendis dolores expedita nisi sapiente, placeat a praesentium molestiae? Dolore nobis nisi quas neque possimus, facilis explicabo excepturi recusandae repellat eligendi in qui rem voluptates!
+    </div>
+    <img src="/home/shashwat/Downloads/14.jpeg" alt="">
+</body>
+</html>

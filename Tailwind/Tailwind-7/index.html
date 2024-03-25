@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class=" text-white" id="Home"
+        style="background:url(./image/kid_transparent.png.webp); background-repeat: no-repeat; height: 85vh;background-position:center;background-size: contain; background-color: #b2b2b2;">
+        <div class="md:flex justify-between container  m-auto py-5" id="header_1">
+            <div class="">
+                <h1 class="text-2xl md:text-4xl ">Kiddy.</h1>
+            </div>
+            <div class="flex gap-5">
+                <div class="flex gap-2">
+                    <i class="fa-solid fa-location-dot text-yellow-500 text-2xl"></i>
+                    <div class="">
+                        <p> 34 Street Name, City Name Here, </p>
+                        <p> United States </p>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <i class="fa-regular fa-clock text-red-500 text-2xl"></i>
+                    <div class="">
+                        <p>Sunday - Friday 8:00AM - 4:00PM </p>
+                        <p>Saturday CLOSED </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="bg-white shadow-lg container m-auto md:rounded-full">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-between">
+                    <div class="flex space-x-7">
+                        <div>
+                            <!-- Website Logo -->
+                            <a href="#" class="flex items-center gap-5  md:hidden py-4 px-2">
+                                <i
+                                    class="fa-brands fa-facebook-f hover:text-red-500 text-black transti duration-150 text-xl"></i>
+                                <i
+                                    class="fa-brands fa-twitter hover:text-red-500 text-black transti duration-150 text-xl"></i>
+                                <i
+                                    class="fa-brands fa-linkedin hover:text-red-500 text-black transti duration-150 text-xl"></i>
+                            </a>
+                        </div>
+                        <!-- Primary Navbar items -->
+                        <div class="hidden md:flex items-center space-x-1">
+                            <a href="#Home"
+                                class="py-4 px-2 text-red-500 border-b-4 hover:text-red-500 border-red-500 font-semibold ">Home</a>
+                            <a href="#About"
+                                class="py-4 px-2 text-gray-500 font-semibold hover:text-red-500 transition duration-300">About</a>
+                            <a href="#Packege"
+                                class="py-4 px-2 text-gray-500 font-semibold hover:text-red-500 transition duration-300">Packege</a>
+                            <a href="#Gallery"
+                                class="py-4 px-2 text-gray-500 font-semibold hover:text-red-500 transition duration-300">Gallery</a>
+                            <a href="#Pricing"
+                                class="py-4 px-2 text-gray-500 font-semibold hover:text-red-500 transition duration-300">Pricing</a>
+                            <a href="#Contact"
+                                class="py-4 px-2 text-gray-500 font-semibold hover:text-red-500 transition duration-300">Contact</a>
+
+                        </div>
+                    </div>
+                    <!-- Secondary Navbar items -->
+                    <div class="hidden md:flex items-center justify-evenly md:w-1/5 ">
+                        <i class="fa-brands fa-facebook-f text-black text-xl hover:text-red-500 cursor-pointer"></i>
+                        <i class="fa-brands fa-twitter text-black text-xl hover:text-red-500 cursor-pointer"></i>
+                        <i class="fa-brands fa-linkedin text-black text-xl hover:text-red-500 cursor-pointer"></i>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="outline-none mobile-menu-button">
+                            <svg class=" w-6 h-6 text-gray-500 hover:text-red-500 " x-show="!showMenu" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+                <ul class="">
+                    <li class="active"><a href="index.html"
+                            class="block text-sm px-2 py-4 text-white bg-red-500 hover:text-white font-semibold">Home</a>
+                    </li>
+                    <li><a href="#About"
+                            class="block text-sm px-2 py-4 hover:bg-red-500 text-black hover:text-white transition duration-300">About</a>
+                    </li>
+                    <li><a href="#Packege"
+                            class="block text-sm px-2 py-4 hover:bg-red-500 text-black hover:text-white transition duration-300">Packege</a>
+                    </li>
+                    <li><a href="#Gallery"
+                            class="block text-sm px-2 py-4 hover:bg-red-500 text-black hover:text-white transition duration-300">Gallery</a>
+                    </li>
+                    <li><a href="#Pricing"
+                            class="block text-sm px-2 py-4 hover:bg-red-500 text-black hover:text-white transition duration-300">Pricing</a>
+                    </li>
+                    <li><a href="#Contact"
+                            class="block text-sm px-2 py-4 hover:bg-red-500 text-black hover:text-white transition duration-300">Contact
+                            Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div id="contant" class="container m-auto md:flex ">
+            <div class="flex flex-col h-[40vh]  justify-center w-1/2 space-y-3 md:mt-0 mt-20">
+                <h4 class=" font-sans  text-black">Welcome To Our Website</h4>
+                <h1 class="text-xl md:text-5xl text-black">Bring Fun Life To Your Kids</h1>
+                <p class="font-serif text-lg font-medium text-black">Amazing Playground for your kids</p>
+                <button class="text-white bg-red-600 w-fit px-10 py-5 rounded-tl-3xl rounded-br-3xl ">Learn
+                    More</button>
+            </div>
+            <div class="flex items-center justify-end h-[60vh]">
+                <!-- <img src="./image/boy_1.png" alt="" class="h-[50vh]"> -->
+            </div>
+
+        </div>
+
+    </div>
+
+    <section>
+        <div
+            class="md:flex justify-center text-center align-middle items-center md:space-x-10 space-y-10 md:space-y-0 mt-56 px-5">
+            <div class="relative md:h-40 md:w-80 bg-red-500 text-center pt-12 text-white">
+                <p>Indoor Games</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nesciunt, mollitia, hic enim id
+                    culpa.</p>
+                <div
+                    class="absolute h-20 w-20 right-32 -top-8 bg-red-500 rounded-full flex items-center justify-center text-2xl">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+            </div>
+
+            <div class="relative md:h-40 md:w-80 bg-[#fdb62f] text-center pt-12 text-white">
+                <p>Outdoor Game And Event</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nesciunt, mollitia, hic enim id
+                    culpa.</p>
+                <div
+                    class="absolute h-20 w-20 right-32 -top-8 bg-[#fdb62f] rounded-full flex items-center justify-center text-2xl">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+
+            <div class="relative md:h-40 md:w-80 bg-[#16c3b0] text-center pt-12 text-white">
+                <p>Camping for Kids</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nesciunt, mollitia, hic enim id
+                    culpa. </p>
+                <div
+                    class="absolute h-20 w-20 right-32 -top-8 bg-[#16c3b0] rounded-full flex items-center justify-center text-2xl">
+                    <i class="fa-sharp fa-solid fa-gear "></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="bg-[#f6f5f5] mt-20" id="About">
+        <div class="md:flex container m-auto py-20">
+            <div class=" md:w-2/3 flex justify-center">
+                <img src="./image/img_1.jpg.webp" alt="" class="w-2/4 ">
+            </div>
+            <div class="md:w-1/3 px-5 mt-5 space-y-5">
+                <h4 class="text-red-600 font-light">About us</h4>
+                <h2 class="md:text-3xl text-xl">Bring Fun Life To Your Kids</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et harum, magni sequi nostrum maxime
+                    enim.Magnam id atque dicta deleniti, ipsam ipsum distinctio. Facilis praesentium voluptatem
+                    accusamus, earum veritatis, laudantium.</p>
+                <button
+                    class="text-white bg-yellow-500 w-fit px-10 py-5 rounded-tl-3xl rounded-br-3xl hover:bg-yellow-600 transition">More
+                    About Us</button>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-[#17a2b8]" id="Packege">
+
+
+        <div class="container m-auto text-center pt-10">
+            <h3 class="text-red-400">Packages You Like</h3>
+            <h2 class="text-3xl text-white">Our Packages</h2>
+        </div>
+        <div class="container m-auto grid lg:grid-cols-3 md:gap-5 md:grid-cols-2 py-20 ">
+            <div
+                class="bg-white rounded-lg py-10 px-1 flex flex-col items-center  justify-center text-center text-gray-700">
+                <img src="./image/001-jigsaw.svg" alt="" class="w-1/6">
+                <h5 class="py-5 text-[#16c3b0]">Indoor Games</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Consequatur aliquam, fuga maiores</p>
+                <p>amet quo corporis distinctio soluta</p>
+                <p>recusandae?</p>
+                <button
+                    class="bg-red-500 text-white px-6 py-2 mt-8 space-x-2 rounded-tl-full rounded-br-full hover:bg-red-600 transition">Learn
+                    More</button>
+            </div>
+
+
+            <div
+                class="bg-white rounded-lg py-10 px-1 flex flex-col items-center  justify-center text-center text-gray-700">
+                <img src="./image/002-target.svg" alt="" class="w-1/6">
+                <h5 class="py-5 text-[#71bc42]">Outdoor Game and Event </h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Consequatur aliquam, fuga maiores</p>
+                <p>amet quo corporis distinctio soluta</p>
+                <p>recusandae?</p>
+                <button
+                    class="bg-yellow-500 text-black px-6 py-2 mt-8 space-x-2 rounded-tl-full rounded-br-full hover:bg-yellow-600 transition">Learn
+                    More</button>
+            </div>
+
+
+            <div
+                class="bg-white rounded-lg py-10 px-1 flex flex-col items-center  justify-center text-center text-gray-700">
+                <img src="./image/003-mission.svg" alt="" class="w-1/6">
+                <h5 class="py-5 text-red-500">Outdoor Game and Event </h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Consequatur aliquam, fuga maiores</p>
+                <p>amet quo corporis distinctio soluta</p>
+                <p>recusandae?</p>
+                <button
+                    class="bg-green-500 text-black px-6 py-2 mt-8 space-x-2 rounded-tl-full rounded-br-full hover:bg-green-600 transition">Learn
+                    More</button>
+            </div>
+        </div>
+    </section>
+    <section id="Pricing">
+        <div class="md:flex container m-auto py-20 gap-5  text-gray-600">
+            <div class="md:w-1/3 flex flex-col md:text-left text-center space-y-2 ">
+                <h4 class="text-red-500">Pricing Plan</h4>
+                <h1 class="md:text-3xl text-xl">Our Pricing</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quis cupiditate fugit, voluptatibus
+                    ullam, non laboriosam alias veniam, ex inventore iure sed?</p>
+            </div>
+            <div class="md:w-1/3 px-5 md:mt-0 mt-5 space-y-3  flex flex-col md:text-left justify-center text-center">
+                <div class="md:border-4 md:border-[#16c3b0] md:w-fit p-1 rounded-full flex justify-center items-center">
+                    <div class="bg-[#16c3b0] text-center rounded-full w-fit px-4 py-6">
+                        <p class="text-3xl">$30</p>
+                    </div>
+                </div>
+                <h1>Silver Pack</h1>
+                <ul class="space-y-2">
+                    <li> <span class="text-[#16c3b0]"> &#10003; </span> Lorem ipsum dolor sit amet</li>
+                    <li> <span class="text-[#16c3b0]"> &#10003; </span> Consectetur adipisicing elit</li>
+                    <li> <span class="text-[#16c3b0]"> &#10003; </span> Nemo quis cupiditate</li>
+                </ul>
+
+                <button
+                    class="bg-[#16c3b0] md:w-fit text-black px-6 py-2 mt-8 space-x-2 rounded-tl-full rounded-br-full hover:bg-green-600 transition">Buy
+                    Now</button>
+            </div>
+
+
+            <div class="md:w-1/3 px-5 md:mt-0 mt-5 space-y-3  flex flex-col md:text-left justify-center text-center">
+                <div class="md:border-4 md:border-red-500 md:w-fit p-1 rounded-full flex justify-center items-center">
+                    <div class="bg-red-500 text-center rounded-full w-fit px-4 py-6">
+                        <p class="text-3xl">$70</p>
+                    </div>
+                </div>
+                <h1>Silver Pack</h1>
+                <ul class="space-y-2">
+                    <li> <span class="text-red-500"> &#10003; </span> Lorem ipsum dolor sit amet</li>
+                    <li> <span class="text-red-500"> &#10003; </span> Consectetur adipisicing elit</li>
+                    <li> <span class="text-red-500"> &#10003; </span> Nemo quis cupiditate</li>
+                </ul>
+
+                <button
+                    class="bg-red-500 md:w-fit text-black px-6 py-2 mt-8 space-x-2 rounded-tl-full rounded-br-full hover:bg-red-600 transition">Buy
+                    Now</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="Gallery">
+        <div class="text-center  container m-auto pt-10">
+            <h4 class="text-red-500">Testimonial</h4>
+            <h1 class="text-xl md:text-3xl">What Our Client Says About Us</h1>
+        </div>
+        <div class="flex container m-auto justify-center py-10">
+
+            <div id="sliderContainer" class="w-10/12 overflow-hidden">
+                <ul id="slider" class="flex w-full">
+                    <li class="p-5 w-full  text-white">
+                        <div class="border bg-red-500 md:flex gap-10 rounded-lg p-5 h-full">
+                            <img class="h-20 w-20  object-cover rounded-md" src="./image/person_1.jpg.webp" alt="">
+                            <div class="">
+                                <h2 class="mt-2 md:text-2xl font-bold text-gray-700">Jeff Woodland</h2>
+                                <p class="mt-2  word-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                                    aliquam voluptates unde eaque saepe. Labore eligendi doloremque dignissimos modi
+                                    accusamus?</p>
+
+
+
+                                <button class="mt-4 px-6 py-3 rounded-md bg-green-600 text-white font-bold">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="p-5 w-full  text-white">
+                        <div class="border bg-red-500 md:flex gap-10 rounded-lg p-5 h-full">
+                            <img class="h-20 w-20 object-cover rounded-md" src="./image/person_2.jpg.webp" alt="">
+                            <div class="">
+                                <h2 class="mt-2 md:text-2xl font-bold text-gray-700">Jeff Woodland</h2>
+                                <p class="mt-2  word-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                                    aliquam voluptates unde eaque saepe. Labore eligendi doloremque dignissimos modi
+                                    accusamus?</p>
+
+
+
+                                <button class="mt-4 px-6 py-3 rounded-md bg-green-600 text-white font-bold">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="p-5 w-full  text-white">
+                        <div class="border bg-red-500 md:flex gap-10 rounded-lg p-5 h-full">
+                            <img class="h-20 w-20 object-cover rounded-md" src="./image/person_3.jpg.webp" alt="">
+                            <div class="">
+                                <h2 class="mt-2 md:text-2xl font-bold text-gray-700">Jeff Woodland</h2>
+                                <p class="mt-2  word-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                                    aliquam voluptates unde eaque saepe. Labore eligendi doloremque dignissimos modi
+                                    accusamus?</p>
+
+
+
+                                <button class="mt-4 px-6 py-3 rounded-md bg-green-600 text-white font-bold">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="p-5 w-full  text-white">
+                        <div class="border bg-red-500 md:flex gap-10 rounded-lg p-5 h-full">
+                            <img class="h-20 w-20 object-cover rounded-md" src="./image/1.jpeg" alt="">
+                            <div class="">
+                                <h2 class="mt-2 text-2xl font-bold text-gray-700">Jeff Woodland</h2>
+                                <p class="mt-2  word-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                                    aliquam voluptates unde eaque saepe. Labore eligendi doloremque dignissimos modi
+                                    accusamus?</p>
+
+
+
+                                <button class="mt-4 px-6 py-3 rounded-md bg-green-600 text-white font-bold">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="md:flex justify-center text-center space-y-4 md:space-y-0 md:gap-20 m-auto container">
+            <div class="">
+                <h1 class="text-3xl  text-[#16c3b0]">3423</h1>
+                <p>Happy Client</p>
+            </div>
+            <div class="">
+                <h1 class="text-3xl  text-[#fdb62f]">4398</h1>
+                <p>Members</p>
+            </div>
+            <div class="">
+                <h1 class="text-3xl  text-[#71bc42]">50+</h1>
+                <p>Staffs</p>
+            </div>
+            <div class="">
+                <h1 class="text-3xl  text-red-500">2000+</h1>
+                <p>Our Followers</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pt-20">
+        <div class="bg-yellow-500">
+            <div
+                class="container m-auto md:flex space-y-3 md:space-y-0 items-center text-center md:justify-between py-10">
+                <h1 class="text-white text-2xl md:text-4xl">Bring Fun Life To Your Kids</h1>
+                <button class="text-white bg-red-600 w-fit px-10 py-5 rounded-tl-3xl rounded-br-3xl ">Learn
+                    More</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-[#343a40]" id="Contact">
+        <div class="pt-20  md:flex container m-auto">
+            <div class="md:w-1/2 px-5 space-y-4">
+                <div class="flex flex-col md:justify-start justify-center">
+                    <h1 class="text-red-500 pb-3">About Us</h1>
+                    <p class="text-white">Far far away, behind the word mountains, far</p>
+                    <p class="text-white"> from the countries Vokalia and
+                        Consonantia,</p>
+                    <p class="text-white"> there live the blind texts.</p>
+                </div>
+                <div class="flex flex-col">
+                    <h1 class="text-red-500 pb-3">Newsletter</h1>
+                    <div class="flex">
+                        <input type="email" name="" id="" class="p-3 outline-none rounded-l-xl md:w-fit w-full" placeholder="Email">
+                        <button class="text-white bg-red-500 px-3 py-3 rounded-r-xl md:w-fit">Send</button>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 md:pt-0 pt-10">
+                <div class="flex justify-evenly">
+                    <div class="space-y-3 md:px-0 px-5">
+                        <h1 class="text-red-500 ">Navigation</h1>
+                        <ul class="space-y-3 text-white">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-3">
+                        <h1 class="text-red-500">Navigation</h1>
+                        <ul class="space-y-3 text-white">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container m-auto py-10"><hr></div>
+        <div class="container m-auto text-center pb-20 text-white">
+            Copyright ©2023 All rights reserved | This template is made with <span class="text-red-500 text-2xl"> &hearts; </span> by Shashwat.
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+
+
+
+
+        let sliderContainer = document.getElementById('sliderContainer');
+        let slider = document.getElementById('slider');
+        let cards = slider.getElementsByTagName('li');
+
+        let elementsToShow = 1;
+        if (document.body.clientWidth < 1000) {
+            elementsToShow = 1;
+        } else if (document.body.clientWidth < 1500) {
+            elementsToShow = 2;
+        }
+
+
+        let sliderContainerWidth = sliderContainer.clientWidth;
+
+        let cardWidth = sliderContainerWidth / elementsToShow;
+
+        slider.style.width = cards.length * cardWidth + 'px';
+        slider.style.transition = 'margin';
+        slider.style.transitionDuration = '1s';
+
+        for (let index = 0; index < cards.length; index++) {
+            const element = cards[index];
+            element.style.width = cardWidth + 'px';
+        }
+
+        function prev() {
+            if (+slider.style.marginLeft.slice(0, -2) != -cardWidth * (cards.length - elementsToShow))
+                slider.style.marginLeft = ((+slider.style.marginLeft.slice(0, -2)) - cardWidth) + 'px';
+        }
+
+        function next() {
+            if (+slider.style.marginLeft.slice(0, -2) != 0)
+                slider.style.marginLeft = ((+slider.style.marginLeft.slice(0, -2)) + cardWidth) + 'px';
+        }
+
+        function autoPlay() {
+            prev()
+
+            if (+slider.style.marginLeft.slice(0, -2) === -cardWidth * (cards.length - elementsToShow)) {
+                slider.style.marginLeft = "0px";
+            }
+
+            setTimeout(() => {
+                autoPlay();
+            }, 3000);
+        }
+
+        setTimeout(() => {
+            autoPlay();
+        }, 3000);
+    </script>
+</body>
+
+</html>
+

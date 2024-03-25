@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox - Nested Flex</title>
+    <style>
+        .content{
+            background-color: blanchedalmond;
+            margin: 50px;
+            padding: 0;
+            border: 3px solid black;
+
+            display: flex;
+            flex-direction: column;
+            /* width: 600px; */
+
+        }
+        .shashwat1{
+            background-color: blueviolet;
+        }
+        .shashwat2{
+            background-color: coral;
+            display: flex;
+        }
+        .shashwat2 > .item{
+            background-color: black;
+            color: yellow;
+            flex-grow: 1;
+            margin: 5px;
+        }
+        .shashwat3{
+            background-color: crimson;
+        }
+        .shashwat {
+            color: wheat;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 0;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="shashwat shashwat1 ">Lorem1</div>
+        <div class="shashwat shashwat2 ">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+        </div>
+        <div class="shashwat shashwat3 ">Lorem3</div>
+    
+
+    </div>
+</body>
+</html>

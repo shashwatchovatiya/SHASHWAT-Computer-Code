@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Table Lay-Out</title>
+    <style>
+           body{
+          /* koy pan aapdi file copy na kare te mate user-select:none; karvu */
+            user-select: none;
+            margin: 0;
+            padding: 0;
+    }
+     
+
+        .shashwat{
+            border: 0px solid black;
+            width: 1000px;
+            background-color:darkgray;
+            margin: 0 auto;
+        }
+
+        #header{
+                background: crimson;
+                height: 80px;
+                padding: 10px 0 0 50px; 
+                color: aliceblue;
+        }
+        #menu{
+            background: lightslategrey;
+           
+        }
+        #menu ul{
+            padding: 0;
+            margin: 0;
+        }
+        #menu li{
+            display: inline-block;
+        }
+        #menu li a{
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black    ;
+        }
+        #menu li a:hover{
+            background: crimson;
+            color: aliceblue;
+        }
+
+        #content{
+            padding: 10px;
+            /* background-color: bisque; */
+        }
+        .xyz{
+            background-color: darkred;
+        }
+        .abc{
+            background-color: aqua;
+        }
+        #footer{
+            background: teal;
+            /* height: 40px; */
+            padding: 10px 10px;
+
+        }
+    </style>
+
+
+
+</head>
+<body class="shashwat">
+   
+
+        <div id="header">
+            <h1>Shashwat</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li > <a href="">Home</a></li>
+                <li > <a href=""> About Us </a></li>
+                <li > <a href=""> Help</a></li>
+                <li > <a href="">Gallery</a> </li>
+
+            </ul>
+        </div>
+        <div id="content"  onclick="myFunction()">
+            <h2>Hello World </h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, saepe? Sed, dolorum? Ullam sunt soluta doloremque maxime! Doloribus minima autem modi? Ex autem reprehenderit accusantium nam velit alias fuga voluptatum odio, possimus sint excepturi, harum aspernatur quibusdam rem maxime quas voluptatem sequi vero. Quisquam cum nisi inventore iusto, dolores perferendis.</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non enim nostrum iste, commodi quasi recusandae aliquid repellendus consequuntur quia consequatur magnam fugiat pariatur, cupiditate ducimus praesentium corrupti deleniti harum! Nemo, vero, quasi inventore distinctio eos quos excepturi illo aut, maxime impedit ex repellendus voluptas error.    </p>
+        </div>
+        <div id="footer">
+            Shashwat@copyright 2016.
+        </div>
+
+
+    
+<script src="Js Folder/classList Mthode .js"></script>
+
+
+
+</body>
+
+</html>

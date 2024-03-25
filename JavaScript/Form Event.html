@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event</title>
+</head>
+<style>
+    /* * {
+        padding: 0;
+        margin: 0;
+    }
+
+    #Main_1 {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        border: 1px solid blue;
+        padding: 0;
+        margin: 0;
+        margin-top: 10%;
+    }
+
+    #fName,
+    #age,
+    #bDate,
+    #Gender {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        width: 90%;
+        padding: 10px;
+    } */
+</style>
+
+<body>
+    <!-- Creat Form Page -->
+    <div id="Main_1">
+        <div id="fName">
+            <label for="">Enter Your Name</label>
+            <input type="text" name="" id="Sha1" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+        </div><br>
+        <div id="age">
+            <label for="">Enter Your Age</label>
+            <input type="number" name="" id="" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+        </div><br>
+        <div id="age">
+            <label for="">Enter Your Age</label>
+            <input type="number" name="" id="" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+        </div><br>
+        <div id="age">
+            <label for="">Enter Your Age</label>
+            <input type="number" name="" id="" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+        </div><br>
+        <div id="age">
+            <label for="">Enter Your Age</label>
+            <input type="number" name="" id="" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+        </div><br>
+
+        <div id="bDate">
+            <label for="">Enter your Birth-Date</label>
+            <input type="date" name="" id="">
+        </div><br>
+
+        <div id="Gender" class="">
+            <label for="">Enter Yore Gander</label>
+            <input type="radio" name="gander" id="Male" onfocus="focusFunction(this)" onblur="blurFunction(this)"><label
+                for="Male">Male</label>
+            <input type="radio" name="gander" id="feMale" onfocus="focusFunction(this)"
+                onblur="blurFunction(this)"><label for="feMale">Female</label>
+            <input type="radio" name="gander" id="other" onfocus="focusFunction(this)"
+                onblur="blurFunction(this)"><label for="other">Other</label>
+
+        </div>
+    </div>
+   
+
+
+
+    <script>
+        function focusFunction(rajat) {
+            // element.style.background = "red";
+            rajat.style.backgroundColor = "red";
+        }
+        function blurFunction(rajat) {
+            rajat.style.backgroundColor = "";
+        }
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+      <style>
+        .Shashwat{
+            background-color: aqua;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            color: red;
+        }
+        .Rajat{
+            background-color: red;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            color: aqua;
+        }
+      </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>DOM Targeting</title>
+</head>
+
+<body>
+    <div id="header" class="flex  justify-center">
+        <div class="w-full md:w-1/2 text-center mt-11 md:mx-16  p-5 bg-yellow-600">
+            <h1 class="h1 text-2xl">Shashwat</h1>
+        </div>
+    </div>
+    <div id="header2" class="flex justify-center">
+        <div class="bg-yellow-600 text-black w-full md:w-1/2  md:px-10">
+            <ul class="md:flex text-center p-5 gap-10">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Gallery</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="content" class="flex justify-center  ">
+        <div class="md:w-1/2  bg-sky-500/100 ">
+            <div class="md:flex">
+                <div class="w-2/3 px-2 ">
+            <div class="h1 text-3xl py-5">Sub heading</div>
+           
+                    <div class="img pt-8">
+                        <img src="./image/bentatou-zakarya-eH3YWMmM2Ac-unsplash.jpg" alt=""
+                            class="md:w-[50%]  pr-2 md:float-left">
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nisi eius nam voluptatum
+                            porro officia tenetur alias modi magnam nemo suscipit ullam quasi, beatae cupiditate? Facere
+                            distinctio fugiat harum ut at temporibus numquam error enim consequuntur dolorem. Nulla
+                            debitis, maxime ex consectetur impedit quod ad aspernatur sint perferendis dolore, omnis
+                            aperiam expedita quaerat illum totam. Atque nihil eos a iusto inventore doloremque sequi
+                            nemo commodi aliquid cum! Dolorum quisquam et quod labore minus recusandae, quasi enim
+                            officia dicta asperiores odit aspernatur corrupti quis cum quas illum earum minima
+                            distinctio omnis eaque exercitationem quo culpa, harum maxime! Vero quo facilis cumque.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, rerum nisi. Delectus,
+                            quia ut. Animi, voluptates rerum. Harum modi provident fuga voluptatibus, accusantium facere
+                            vero eveniet, asperiores eos ullam tenetur, quis commodi sit. Illum rerum eveniet modi non
+                            quod excepturi, unde placeat mollitia doloribus quam possimus temporibus sunt ratione
+                            molestias!</p>
+                    </div>
+                </div>
+
+                <div class="w-1/3 px-2 text-center bg-red-500 md:block hidden text-center ">
+                    <ul class="w-full space-y-6 flex flex-col items-center">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Gallery</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="flex  justify-center">
+        <div class=" w-1/2 Shashwat flex  justify-end">
+            <h1>@copyright 2019</h1>
+        </div>
+    </div>
+    <script src="Js Folder/DOM_Targeting.js"></script>
+    <script src="Js Folder/classList Mthode .js"></script>
+</body>
+
+</html>

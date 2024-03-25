@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Contains methode</title>
+</head>
+<body>
+    <div id="shashwat">
+        <div id="chovatiya_Shashwat_Arvindbhai">
+            <p>Hello I am chovatiya Shashwat</p>
+            <div id="Chovatiya_Rajat">
+                <p>Hello Iam Chovatiya Rajat</p>
+                <p id="ABC">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, perferendis!</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var a = document.getElementById("shashwat");
+        var x = document.getElementById('Chovatiya_Rajat');
+        const Find = a.contains(x);
+        // console.log(Find);
+        document.write(Find);
+    </script>
+</body>
+</html>

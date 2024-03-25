@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom isEqualNode Methode</title>
+</head>
+<style>
+    
+</style>
+
+<body>
+    <div id="Main_1">
+        <ul id="shashwat">
+            <li>Shashwat</li>
+            <li>mitanshu</li>
+            <li>Dhurmil</li>
+            <li>Jaymin</li>
+        </ul>
+        <ul id="shashwat2">
+            <li>Shashwat</li>
+            <li class="">mitanshu</li>
+            <li>Dishank</li>
+        </ul>
+    </div>
+<script>
+    var a = document.getElementById('shashwat').children[1];
+    var b = document.getElementById('shashwat2').children[1];
+
+
+    const equal = a.isEqualNode(b);
+    console.log(equal)
+
+
+    const x = document.getElementById('shashwat').children[0];
+    const y = document.getElementById('shashwat2').children[0];
+    const Equal = x.isEqualNode(y);
+    console.log(Equal)
+
+</script>
+</body>
+
+</html>

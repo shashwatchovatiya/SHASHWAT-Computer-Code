@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+.header1 {
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+
+.anc {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.anc a {
+    color: white;
+}
+
+.header2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+}
+
+.search {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.S_2 {
+    border: none;
+}
+
+.acount {
+    display: flex;
+}
+.cart{
+    display: flex;
+    
+}
+.icon{
+    display: flex;
+    text-align: start;
+}
+.list{
+    margin-top: 20px;
+    justify-content: space-around;
+    display: flex;
+    background-color: #11A0DB;
+    padding: 5px;
+    color: white;
+}
+.list a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}

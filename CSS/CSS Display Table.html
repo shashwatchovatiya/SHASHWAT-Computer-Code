@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Table</title>
+    <style>
+
+        #table{
+            display: table;
+            width: 600px;
+            margin: 0 auto;
+            padding: 100px;
+            /* border: 2px solid black; */
+        }
+        #table-header
+        {
+            display: table-header-group;
+            background-color: aqua;
+        }
+       .row{
+        display: table-row;
+       }
+        .col{
+            border: 1px solid black;
+            display: table-cell;        
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="table">
+        <div id="table-header">
+            <div class="col">AGE</div>
+            <div class="col">NAME</div>
+            <div class="col">ROOL NO.</div>
+        </div>
+    <div class="row">
+        <div class="col">18</div>
+        <div class="col">Shashwart</div>
+        <div class="col">25</div>
+    </div>
+
+    <div class="row">
+        <div class="col">18</div>
+        <div class="col">Mitanshu</div>
+        <div class="col">26</div>
+    </div>
+
+    <div class="row">
+        <div class="col">18</div>
+        <div class="col">Dhrumil</div>
+        <div class="col">27</div>
+    </div>
+
+    <div class="row">
+        <div class="col">18</div>
+        <div class="col">Jaymin</div>
+        <div class="col">28</div>
+    </div>
+
+    </div>
+</body>
+</html>

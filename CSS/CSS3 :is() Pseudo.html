@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 :is() Pseudo</title>
+    <style>
+        /* #test1 :is(h1 ,h2 ,h3 ,p){
+            color: darkred;
+        } */
+        /* :is(#test1 ,#test2) h1{
+            color: burlywood;
+        } */
+        :is(#test1 ,#test2) p:hover{
+            color: yellow;
+            background-color: black;
+        
+        } 
+
+        :is(#test1 ,#test2) h1:hover{
+            color: yellow;
+            background-color: black;
+        
+        } 
+    </style>
+ </head>
+ <body>
+    <div id="test1"> 
+        <h1>Section One</h1>
+        <h2>Shashwat</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam fugit iste expedita unde aut debitis earum vel pariatur alias corrupti magnam obcaecati ullam, quas recusandae et. Maxime rerum sint dignissimos et consequatur, quod nostrum quia voluptatibus nam ullam nesciunt impedit ipsam vel doloribus eaque voluptate. Voluptatem, neque omnis perferendis provident atque voluptatibus!
+
+        </p>
+
+        <h2>Rajat</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, saepe?</p>
+    </div>
+    <div id="test2">
+        <h1> Section 2   </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis est magnam nam nisi harum, veritatis atque quisquam dolorem similique deleniti? Iure, consequuntur? Aspernatur quos consectetur esse accusamus. Pariatur sunt magni quo quis excepturi non nesciunt repellendus. Ab sunt explicabo provident nobis nostrum, illo quis, eius deleniti, minima doloremque deserunt quod.</p>
+    </div>
+ </body>
+ </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in setTimeout & clearTimeout</title>
+
+
+    <style>
+        #div_1 {
+            width: 150px;
+            height: 150px;
+            background-color: burlywood;
+            color: black !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div_1"></div><br>
+    <button id="Stop" onclick="myStopFunction()" ondblclick="alertFunction()">Stop</button>
+
+    <script>
+        const myTimeout = setTimeout(myGreeting, 5000);
+
+        function myGreeting() {
+            document.getElementById("div_1").innerHTML = "Hii I am Shashwat"
+        }
+
+        function myStopFunction() {
+            clearTimeout(myTimeout);
+        }
+
+        function alertFunction(){
+            alert('hello please click here')
+        }
+    </script>
+</body>
+
+</html>

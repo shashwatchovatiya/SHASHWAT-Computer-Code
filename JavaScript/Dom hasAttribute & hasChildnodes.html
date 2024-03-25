@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom hasAttribute & hasChildnodes</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    #Main_1 {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        border: 1px solid blue;
+        padding: 0;
+        margin: 0;
+        margin-top: 10%;
+    }
+
+    #fName,
+    #age,
+    #bDate,
+    #Gender {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        width: 90%;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <!-- Creat Form Page -->
+    <div id="Main_1">
+        <div id="fName">
+            <label for="">Enter Your Name</label>
+            <input type="text" name="" id="">
+        </div><br>
+        <div id="age">
+            <label for="">Enter Your Age</label>
+            <input type="number" name="" id="">
+        </div><br>
+        <div id="bDate">
+            <label for="">Enter your Birth-Date</label>
+            <input type="date" name="" id="">
+        </div><br>
+        <div id="Gender" class="">
+            <label for="">Enter Yore Gander</label>
+            <input type="radio" name="gander" id="Male"><label for="Male">Male</label>
+            <input type="radio" name="gander" id="feMale"><label for="feMale">Female</label>
+            <input type="radio" name="gander" id="other"><label for="other">Other</label>
+
+        </div>
+    </div>
+
+    <script>
+        // hasAttibute Methode
+
+        const x = document.getElementById("Male")
+        const Find = x.hasAttribute('name');
+        console.log(Find);
+
+        // hasChildNodes Methode
+
+        const a = document.getElementById("age");
+
+        const find = a.hasChildNodes("type");
+
+        console.log(find);
+    </script>
+</body>
+
+</html>

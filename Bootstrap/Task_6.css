@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.header_li ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#bg {
+    color: #FFFFFF;
+    background: url(./image/hero-bg.jpg) no-repeat 0 0;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /* padding: 50px 0; */
+    position: relative;
+}
+
+#bg::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.container-fluid>.navbar-brand>* {
+    z-index: 1;
+    color: #FFFFFF;
+}
+
+.navbar>a * {
+    z-index: 1;
+}
+
+.container-fluid>.row>* {
+    z-index: 1;
+}
+
+
+.Shashwat_505 {
+    color: #FFFFFF;
+}
+
+.H1_about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+}
+
+.search_bar {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 8px 25px;
+}
+
+#input {
+    border: none;
+}
+
+#input:focus {
+    outline: none;
+}
+
+.vansh {
+    float: right;
+    text-align: right;
+}
+
+.submit {
+    background-color: tomato;
+    color: #FFFFFF;
+}
+
+.add {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+
+.logo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.logo1 {
+
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(0%);
+    /* filter: saturate(10);     */
+}
+
+.logo1:hover {
+    filter: contrast(100%);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.con_par {
+    font-size: 14px;
+}
+
+.read_more {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.submit_1 {
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    padding: 3px 10px;
+    padding-top: 0;
+    background: tomato;
+}
+
+.readius {
+    border-radius: 10px;
+}
+
+.google_fonts :hover {
+    background-color: tomato;
+    transition: 0.5s;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.Our_project {
+    color: #FFFFFF;
+    background: url(./image/stats-bg.jpg) no-repeat 0 0;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 150px 0;
+    position: relative;
+}
+
+.Our_project::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.row>.col-md-12>.row>* {
+    z-index: 1;
+}
+
+/**************************************************************/
+.fancy {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3% auto;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 1.6rem;
+    margin-top: 10%;
+}
+
+.title::after,
+.title::before {
+    content: "";
+    height: 3px;
+    background-color: tomato;
+    display: block;
+}
+
+/* ************************************************************ */
+.lorem_ipsum a {
+    text-decoration: none;
+    color: #000;
+}
+
+.lorem_ipsum a:hover,
+.lorem_ipsum p:hover {
+    color: tomato;
+    transition: all .5s;
+}
+
+.lorem_ipsum p {
+    color: rgba(0, 0, 0, .7);
+}
+
+hr.new2 {
+    border: none;
+    height: 5px;
+    border-radius: 10px;
+    /* background:rgb(231, 20, 20); */
+}
+
+/* ************************************************************ */
+.wrapper {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    /* float: right; */
+}
+
+.Image_12 {
+    width: 50%;
+    /* height: 100%; */
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    border: 5PX solid white;
+}
+
+.Image_13 {
+    width: 45%;
+    /* height: 100%; */
+    position: absolute;
+    top: 0;
+    left: 20%;
+    border: 5PX solid white;
+}
+
+/* ************************************************************ */
+.Image_11 {
+    margin-top: 45%;
+    width: 100%;
+}
+
+.subsection_2 {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.right_li {
+    list-style-type: "✓";
+}
+
+/* ********************************red**************************** */
+.Product_1:hover {
+    background-color: rgba(0, 0, 0, .7);
+    cursor: pointer;
+}
+
+.Product_1::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* *********************************************************** */
+
+.span {
+    content: "\2714";
+    color: green;
+}
+
+.btn_505 {
+    color: #000;
+}
+
+.questions {
+    margin-top: 10%;
+}
+
+
+/********************************************* Frequently AskedQuestions******************************************** */
+h2 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #091f2f;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.accordion-section .panel-default .panel-title a {
+    display: block;
+    font-size: 1rem;
+}
+
+.accordion-section .panel-default .panel-title a:after {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 3rem;
+    content: "\f106";
+    color: #1f7de2;
+    float: right;
+    margin-top: -12px;
+}
+
+
+.Hover_i{
+    position: relative;
+    width: 100%;
+}
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border: 5px solid white;
+    border-radius: 50%;
+
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container .image:hover {
+    opacity: 0.3;
+    border: 5px solid rgba(0, 0, 0, .7);
+    border-radius: 50%;
+}
+
+
+/* img_hover */
+.shashwat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    border: none;
+    background-color: blue;
+}
+.card:hover .card-body{
+    bottom: 0;
+    transition: all 0.5s;
+}
+.card-body i:hover{
+    color: tomato;
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: teal;
+}
+.card-body{
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    position:absolute;
+    background-color: rgba(0,0,0,.7);
+    padding: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    justify-content: center;
+}
+.card-body i{
+    color: aliceblue;
+}
+/* ************************************************************************* */
+.call_to_action {
+    color: #FFFFFF;
+    background: url(./image/cta-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.call_to_action::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.row >.col-md-12 > .row > * {
+    z-index: 1;
+}
+/* ************************************************************************* */
+.wrapper_2{
+    background: #FFFFFF;
+}
+/* ************************************************************************* */
+.Input_2:hover{
+    border: tomato;
+    /* box-shadow: tomato; */
+}
+/* ************************************************************************* */
+.Hover_i_2{
+    color: rgba(0, 0, 0, .5);
+}
+.Hover_i_2:hover{
+    color: tomato;
+}
+.color_footer{
+    background-color: rgb(255, 255, 255);
+}
+/* ************************************************************************* */
+@media  screen and (max-width: 512px){
+    *{
+        background-color: #1f7de2;
+    }
+    .wrapper{
+        display: none;
+    }
+    .Image_11{
+        margin-top: 10px;   
+    }
+    .clock_img{
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="h-screen text-white bg-center "
+        style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(./img/hero-bg.jpg);background-position: center;background-repeat: no-repeat; background-size: cover; ">
+
+        <div class="navbar sm:flex justify-between">
+            <!-- <div
+                class="logo ml-12 dark:text-white  transform ease-in-out duration-500 flex-none h-full flex items-center justify-center">
+
+            </div> -->
+            <!-- SPACER -->
+            <!-- <div class="grow h-full flex items-center justify-center"></div>
+            <div class="flex-none h-full text-center flex items-center justify-center">
+            </div> -->
+
+            <aside
+                class="w-60 -translate-x-48 fixed transition transform ease-in-out duration-1000 z-50 flex h-screen bg-[#1E293B] ">
+                <!-- open sidebar button -->
+                <div
+                    class="max-toolbar translate-x-24 scale-x-0 w-full -right-6 transition transform ease-in duration-300 flex items-center justify-between border-4 border-white dark:border-[#0F172A] bg-[#1E293B]  absolute top-2 rounded-full h-12">
+
+                    <div class="flex pl-4 items-center space-x-2 ">
+                        <div>
+                            <div onclick="setDark('dark')"
+                                class="moon text-white hover:text-blue-500 dark:hover:text-[#38BDF8]">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3}
+                                    stroke="currentColor" class="w-4 h-4">
+                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                                </svg>
+                            </div>
+                            <div onclick="setDark('light')"
+                                class="sun hidden text-white hover:text-blue-500 dark:hover:text-[#38BDF8]">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="text-white hover:text-blue-500 dark:hover:text-[#38BDF8]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3}
+                                stroke="currentColor" class="w-4 h-4">
+                                <path strokeLinecap="round" strokeLinejoin="round"
+                                    d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-center space-x-3 group bg-gradient-to-r dark:from-cyan-500 dark:to-blue-500 from-indigo-500 via-purple-500 to-purple-500  pl-10 pr-2 py-1 rounded-full text-white  ">
+                        <div class="transform ease-in-out duration-300 mr-12">
+                            NERVE
+                        </div>
+                    </div>
+                </div>
+                <div onclick="openNav()"
+                    class="-right-6 transition transform ease-in-out duration-500 flex border-4 border-white dark:border-[#0F172A] bg-[#1E293B] dark:hover:bg-blue-500 hover:bg-purple-500 absolute top-2 p-3 rounded-full text-white hover:rotate-45">
+                    <i class="fa-solid fa-bars"></i>
+
+                    </svg>
+                </div>
+
+                <!-- MAX SIDEBAR-->
+                <div class="max hidden text-white mt-20 flex-col space-y-2 w-full h-[calc(100vh)]">
+                    <div
+                        class="hover:ml-4 w-full text-white hover:text-purple-500 dark:hover:text-blue-500 bg-[#1E293B] p-2 pl-8 rounded-full transform ease-in-out duration-300 flex flex-row items-center space-x-3">
+                        <i class="fa-solid fa-house"></i>
+                        <div>
+                            Home
+                        </div>
+                    </div>
+                    <div
+                        class="hover:ml-4 w-full text-white hover:text-purple-500 dark:hover:text-blue-500 bg-[#1E293B] p-2 pl-8 rounded-full transform ease-in-out duration-300 flex flex-row items-center space-x-3">
+                        <i class="fa-solid fa-user"></i>
+                        </svg>
+                        <div>
+                            About
+                        </div>
+                    </div>
+                    <div
+                        class="hover:ml-4 w-full text-white hover:text-purple-500 dark:hover:text-blue-500 bg-[#1E293B] p-2 pl-8 rounded-full transform ease-in-out duration-300 flex flex-row items-center space-x-3">
+                        <i class="fa-regular fa-file"></i>
+                        <div>
+                            Resume
+                        </div>
+                    </div>
+                    <div
+                        class="hover:ml-4 w-full text-white hover:text-purple-500 dark:hover:text-blue-500 bg-[#1E293B] p-2 pl-8 rounded-full transform ease-in-out duration-300 flex flex-row items-center space-x-3">
+                        <i class="fa-solid fa-building"></i>
+                        <div>
+                            Department
+                        </div>
+                    </div>
+                    <div
+                        class="hover:ml-4 w-full text-white hover:text-purple-500 dark:hover:text-blue-500 bg-[#1E293B] p-2 pl-8 rounded-full transform ease-in-out duration-300 flex flex-row items-center space-x-3">
+                        <i class="fa-solid fa-server"></i>
+                        <div>
+                            Service
+                        </div>
+                    </div>
+                    <div
+                        class="hover:ml-4 w-full text-white hover:text-purple-500 dark:hover:text-blue-500 bg-[#1E293B] p-2 pl-8 rounded-full transform ease-in-out duration-300 flex flex-row items-center space-x-3">
+                        <i class="fa-regular fa-envelope"></i>
+                        </svg>
+                        <div>
+                            Contact
+                        </div>
+                    </div>
+                </div>
+                <!-- MINI SIDEBAR-->
+                <div class="mini mt-20 flex flex-col space-y-2 w-full h-[calc(100vh)]"></div>
+
+            </aside>
+            <div class="flex flex-col align-middle justify-center w-full" style="height: 800px; align-items: center; ">
+                <div class="flex justify-center text-3xl md:text-7xl"> Alex Smith <br>
+                </div>
+                <p class="md:text-3xl">I am coder</p>
+            </div>
+
+
+            <!-- CONTENT -->
+
+
+        </div>
+
+    </div>
+
+    <div class="px-20 md:px-60 my-12">
+        <h1 class="text-4xl text-blue-900">About</h1>
+        <div class="line h-1 w-16 bg-blue-700 my-2 mt-3"></div>
+        <div class="mt-6 text-zinc-700">
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+            in iste officiis commodi quidem hic quas.
+        </div>
+        <div class="about_me mt-8 lg:flex">
+            <div class="img lg:w-[30%] ">
+                <img src="/img/profile-img.jpg" alt="" class=" mr-0 ">
+            </div>
+            <div class="information w-[70%]  mx-5 lg:mt-0 mt-5 ">
+                <h1 class="text-2xl text-blue-950 font-bold ">UI/UX Designer & Web Developer.</h1>
+                <p class="italic text-zinc-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="md:flex mt-5 md:space-x-32">
+                    <div class="flex flex-col space-y-4">
+
+                        <a href="">&#62; &nbsp; <span class="font-bold"> Birthday:</span> 1 May 1995</a>
+                        <a href="">&#62; &nbsp; <span class="font-bold">Website:</span> www.example.com</a>
+                        <a href="">&#62; &nbsp; <span class="font-bold">Phone:</span> +123 456 7890</a>
+                        <a href="">&#62; &nbsp; <span class="font-bold">City:</span> New York, USA</a>
+                    </div>
+                    <div class="flex flex-col space-y-4 md:mt-0 mt-5">
+                        <a href="">&#62; &nbsp; <span class="font-bold">Age:</span> 30</a>
+                        <a href="">&#62; &nbsp; <span class="font-bold">Degree:</span> Master</a>
+                        <a href="">&#62; &nbsp; <span class="font-bold">PhEmailone:</span> email@example.com</a>
+                        <a href="">&#62; &nbsp; <span class="font-bold">Freelance:</span> Available</a>
+                    </div>
+                </div>
+                <p class="mt-5 text-zinc-700">
+                    Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci
+                    omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta
+                    maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet
+                    quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="px-20 md:px-60 my-12">
+        <h1 class="text-4xl text-blue-900">Facts</h1>
+        <div class="line h-1 w-16 bg-blue-700 my-2 mt-3"></div>
+        <div class="mt-6 text-zinc-700">
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+            in iste officiis commodi quidem hic quas.
+        </div>
+        <div class="md:flex justify-between">
+            <div class="flex my-14 space-x-4">
+                <i class="fa-regular fa-face-smile text-4xl mt-2 " style="color: #149ddd"></i>
+                <div class="">
+                    <h1 class="text-4xl font-bold">232</h1>
+                    <p class="font-bold">Happy Clients</p>
+                    <p class="text-zinc-500">consequuntur quae</p>
+
+                </div>
+            </div>
+            <div class="flex my-14 space-x-4">
+                <i class="fa-regular fa-file-image text-4xl mt-2" style="color: #149ddd"></i>
+
+                <div class="">
+                    <h1 class="text-4xl font-bold">521</h1>
+                    <p class="font-bold">Projects</p>
+                    <p class="text-zinc-500">Lorem ipsum.</p>
+
+                </div>
+            </div>
+            <div class="flex my-14 space-x-4">
+                <i class="fa-solid fa-headset text-4xl mt-2" style="color: #149ddd"></i>
+                <div class="">
+                    <h1 class="text-4xl font-bold">1453</h1>
+                    <p class="font-bold">Hours Of Support</p>
+                    <p class="text-zinc-500">aut commodi quaerat</p>
+
+                </div>
+            </div>
+            <div class="flex my-14 space-x-4">
+                <i class="fa-solid fa-chalkboard-user text-4xl mt-2" style="color: #149ddd"></i>
+                <div class="">
+                    <h1 class="text-4xl font-bold">32</h1>
+                    <p class="font-bold">Hard Workers </p>
+                    <p class="text-zinc-500">rerum asperiores dolor</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="px-20 md:px-60 my-12">
+        <h1 class="text-4xl text-blue-900">Skills</h1>
+        <div class="line h-1 w-16 bg-blue-700 my-2 mt-3"></div>
+        <div class="mt-6 text-zinc-700">
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+            in iste officiis commodi quidem hic quas.
+        </div>
+
+        <div class="lg:flex lg:space-x-5">
+            <div class="w-[50%]">
+                <div class="flex justify-between">
+                    <div class="mb-1 text-base font-medium text-blue-700 dark:text-black">HTML</div>
+                    <div class="mb-1 text-base font-medium text-blue-700 dark:text-black">100%</div>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-200">
+                    <div class="bg-[#149ddd] h-2.5 " style="width: 100%"></div>
+                </div>
+
+                <div class="flex justify-between">
+                    <div class="mb-1 text-base font-medium text-blue-700 dark:text-black">CSS</div>
+                    <div class="mb-1 text-base font-medium text-blue-700 dark:text-black">90%</div>
+                </div>
+                <div class="w-full bg-gray-200  h-2.5 mb-4 dark:bg-gray-200">
+                    <div class="bg-[#149ddd] h-2.5 " style="width: 90%"></div>
+                </div>
+
+                <div class="flex justify-between">
+                    <div class="mb-1 text-base font-medium text-blue-700 dark:text-black">JAVASCRIPT</div>
+                    <div class="mb-1 text-base font-medium text-blue-700 dark:text-black">75%</div>
+                </div>
+                <div class="w-full bg-gray-200  h-2.5 mb-4 dark:bg-gray-200">
+                    <div class="bg-[#149ddd] h-2.5 " style="width: 75%"></div>
+                </div>
+            </div>
+
+            <div class="w-[50%]">
+                <div class="flex justify-between">
+                    <div class="mb-1 text-base font-medium text-blue-700 dark:text-black">PHP</div>
+                    <div class="mb-1 text-base font-medium text-blue-700 dark:text-black">80%</div>
+                </div>
+                <div class="w-full bg-gray-200  h-2.5 mb-4 dark:bg-gray-200">
+                    <div class="bg-[#149ddd] h-2.5 " style="width: 80%"></div>
+                </div>
+
+                <div class="flex justify-between">
+                    <div class="mb-1 text-base font-medium text-blue-700 dark:text-black">WORDPRESS/CMS</div>
+                    <div class="mb-1 text-base font-medium text-blue-700 dark:text-black">90%</div>
+                </div>
+                <div class="w-full bg-gray-200  h-2.5 mb-4 dark:bg-gray-200">
+                    <div class="bg-[#149ddd] h-2.5 " style="width: 90%"></div>
+                </div>
+
+                <div class="flex justify-between">
+                    <div class="mb-1 text-base font-medium text-blue-700 dark:text-black">PHOTOSHOP</div>
+                    <div class="mb-1 text-base font-medium text-blue-700 dark:text-black">55%</div>
+                </div>
+                <div class="w-full bg-gray-200  h-2.5 mb-4 dark:bg-gray-200">
+                    <div class="bg-[#149ddd] h-2.5 " style="width: 55%"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="px-20 md:px-60 my-12">
+        <h1 class="text-4xl text-blue-900">Resume</h1>
+        <div class="line h-1 w-16 bg-blue-700 my-2 mt-3"></div>
+        <div class="mt-6 text-zinc-700">
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+            in iste officiis commodi quidem hic quas.
+        </div>
+
+        <div class="lg:flex justify-around mt-6">
+            <div class="">
+
+
+                <h1 class="text-4xl">Sumary</h1>
+                <ol class="relative border-l border-gray-200 dark:border-gray-700 mt-16 md:-ml-2">
+
+                    <li class="mb-10 ml-6 ">
+
+                        <span
+                            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-1 ring-white dark:ring-black">
+                        </span>
+                        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-black">ALEX
+                            SMITH
+                        </h3>
+                        <p class="italic">Innovative and deadline-driven Graphic Designer with 3+ years of experience
+                            designing and developing user-centered digital/print marketing material from initial concept
+                            to
+                            final, polished deliverable.</p>
+                        <ul class="py-4 space-y-3">
+                            <li style="list-style:disc; font-size: 18px;">Portland par 127,Orlando, FL</li>
+                            <li style="list-style:disc; font-size: 18px;">(123) 456-7891</li>
+                            <li style="list-style:disc; font-size: 18px; line-break: auto ;  word-wrap: break-word;">
+                                alice.barkley@example.com</li>
+                        </ul>
+                    </li>
+
+                </ol>
+                <h1 class="sm:text-4xl  text-2xl">Education</h1>
+                <ol class="relative border-l border-gray-200 dark:border-gray-700 mt-10">
+                    <li class="mb-10 ml-6 space-y-5">
+                        <span
+                            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-1 ring-white dark:ring-black">
+                        </span>
+                        <h3 class="flex items-center  text-lg font-semibold text-gray-900 dark:text-black "
+                            style="margin-bottom: 10px;">MASTER OF FINE ARTS & GRAPHIC DESIGN
+                        </h3>
+                        <span class="bg-gray-200 p-2 "> 2015-2016</span>
+                        <p class="italic">Rochester Institute of Technology, Rochester, NY</p>
+                        <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero
+                            voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+
+                    </li>
+                    <li class="ml-6 space-y-5   ">
+                        <span
+                            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-1 ring-white dark:ring-black">
+
+                        </span>
+                        <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-black"
+                            style="margin-bottom: 10px;">
+                            BACHELOR OF FINE ARTS & GRAPHIC DESIGN</h3>
+                        <span class="bg-gray-200 p-2 "> 2010-2014</span>
+                        <p class="italic">Rochester Institute of Technology, Rochester, NY</p>
+                        <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero
+                            voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+
+                    </li>
+                </ol>
+            </div>
+            <h1 class="text-4xl lg:-mr-28">Sumary</h1>
+            <ol class="relative border-l border-gray-200 dark:border-gray-700 mt-16 md:-ml-2">
+
+                <li class="mb-10 ml-6 space-y-3">
+                    <span
+                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-1 ring-white dark:ring-black">
+                    </span>
+                    <h3 class="flex items-center  text-lg font-semibold text-gray-900 dark:text-black "
+                        style="margin-bottom: 10px;">SENIOR GRAPHIC DESIGN SPECIALIST
+                    </h3>
+                    <span class="bg-gray-200 p-2 "> 2019-Present</span>
+                    <p class="italic">Experion, New York, NY </p>
+                    <ul class="py-4 space-y-3">
+                        <li style="list-style:disc; font-size: 18px; word-wrap: break-word;">Lead in the design,
+                            development, and implementation of the graphic, layout, and production communication
+                            materials</li>
+                        <li style="list-style:disc; font-size: 18px; word-wrap: break-word;">Delegate tasks to the 7
+                            members of the design team and provide counsel on all aspects of the project.</li>
+                        <li style="list-style:disc; font-size: 18px; word-wrap: break-word;">Supervise the assessment of
+                            all graphic materials in order to ensure quality and accuracy of the design
+                        </li>
+                        <li style="list-style:disc; font-size: 18px; word-wrap: break-word;">Oversee the efficient use
+                            of production project budgets ranging from $2,000 - $25,000</li>
+
+                    </ul>
+
+                </li>
+                <li class="ml-6 space-y-5   ">
+                    <span
+                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-1 ring-white dark:ring-black">
+
+                    </span>
+                    <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-black" style="margin-bottom: 10px;">
+                        GRAPHIC DESIGN SPECIALIST</h3>
+                    <span class="bg-gray-200 p-2 "> 2017 - 2018</span>
+                    <p class="italic">Stepping Stone Advertising, New York, NY</p>
+
+                    <ul class="py-4 space-y-3">
+                        <li style="list-style:disc; font-size: 18px; word-wrap: break-word;">Developed numerous
+                            marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+                        <li style="list-style:disc; font-size: 18px;">
+                            Managed up to 5 projects or tasks at a given time while under pressure.</li>
+                        <li style="list-style:disc; font-size: 18px; word-wrap: break-word;">Recommended and consulted
+                            with clients on the most appropriate graphic design
+                        </li>
+                        <li style="list-style:disc; font-size: 18px; word-wrap: break-word;">Created 4+ design
+                            presentations and proposals a month for clients and account managers</li>
+
+                    </ul>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+    <div class="px-20 md:px-60 my-12">
+        <h1 class="text-4xl text-blue-900">Portfolio</h1>
+        <div class="line h-1 w-16 bg-blue-700 my-2 mt-3"></div>
+        <div class="mt-6 text-zinc-700">
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+            in iste officiis commodi quidem hic quas.
+        </div>
+        <ul class="flex justify-center space-x-6 mt-10">
+            <a href="">
+                <li class="text-blue-900 font-bold text-lg hover:text-[#149ddd] transition-all">All</li>
+            </a><a href="">
+                <li class=" font-bold text-lg hover:text-[#149ddd] transition-all">App</li>
+            </a><a href="">
+                <li class=" font-bold text-lg hover:text-[#149ddd] transition-all">Card</li>
+            </a><a href="">
+                <li class=" font-bold text-lg hover:text-[#149ddd] transition-all">Web</li>
+            </a>
+        </ul>
+        <div class="md:flex space-x-8 space-y-6">
+            <div class=" hover:cursor-pointer">
+                <img src="./img/portfolio/portfolio-1.jpg" alt="" class="mt-6 ">
+            </div>
+            <div class=" hover:cursor-pointer">
+                <img src="./img/portfolio/portfolio-2.jpg" alt="">
+            </div>
+            <div class=" hover:cursor-pointer">
+                <img src="./img/portfolio/portfolio-3.jpg" alt="">
+            </div>
+        </div>
+        <div class="md:flex space-x-8 space-y-6">
+            <div class=" hover:cursor-pointer">
+                <img src="./img/portfolio/portfolio-4.jpg" alt="">
+            </div>
+            <div class=" hover:cursor-pointer">
+                <img src="./img/portfolio/portfolio-5.jpg" alt="">
+            </div>
+            <div class=" hover:cursor-pointer">
+                <img src="./img/portfolio/portfolio-6.jpg" alt="">
+            </div>
+        </div>
+        <div class="md:flex space-x-8 space-y-6">
+            <div class=" hover:cursor-pointer">
+                <img src="./img/portfolio/portfolio-7.jpg" alt="">
+            </div>
+            <div class=" hover:cursor-pointer">
+                <img src="./img/portfolio/portfolio-8.jpg" alt="">
+            </div>
+            <div class=" hover:cursor-pointer">
+                <img src="./img/portfolio/portfolio-9.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="px-20 md:px-60 my-12">
+        <h1 class="text-4xl text-blue-900">Services</h1>
+        <div class="line h-1 w-16 bg-blue-700 my-2 mt-3"></div>
+        <div class="mt-6 text-zinc-700">
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+            in iste officiis commodi quidem hic quas.
+        </div>
+
+        <div class="lg:flex" style="margin-top: 45px;">
+            <div class="flex space-x-3 mt-3">
+                <div class="">
+                    <i
+                        class="fa-solid fa-briefcase text-4xl bg-[#149ddd] text-white p-4 rounded-full hover:text-[#149ddd] hover:border-gray-950 hover:bg-zinc-300 transition-all "></i>
+                </div>
+                <div class="space-y-4">
+                    <a href="#" class="text-2xl font-medium">Lorem Ipsum</a>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                        cupiditate non provident</p>
+                </div>
+            </div>
+
+            <div class="flex space-x-3 mt-3">
+                <div class="">
+                    <i
+                        class="fa-solid fa-check-to-slot text-4xl bg-[#149ddd] text-white p-4 rounded-full hover:text-[#149ddd] hover:border-gray-950 hover:bg-zinc-300 transition-all"></i>
+                </div>
+                <div class="space-y-4">
+                    <a href="#" class="text-2xl font-medium">Dolor Sitema</a>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                        cupiditate non provident</p>
+                </div>
+            </div>
+
+            <div class="flex space-x-3 mt-3">
+                <div class="">
+                    <i
+                        class="fa-regular fa-chart-bar text-4xl bg-[#149ddd] text-white p-4 rounded-full hover:text-[#149ddd] hover:border-gray-950 hover:bg-zinc-300 transition-all "></i><i
+                        class=""></i>
+                </div>
+                <div class="space-y-4">
+                    <a href="#" class="text-2xl font-medium">Sed ut perspiciatis</a>
+                    <p class="space-y-3">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+                        sint occaecati cupiditate non provident</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="lg:flex" style="margin-top: 45px;">
+            <div class="flex space-x-3 mt-3">
+                <div class="">
+                    <i
+                        class="fa-solid fa-binoculars text-4xl bg-[#149ddd] text-white p-4 rounded-full hover:text-[#149ddd] hover:border-gray-950 hover:bg-zinc-300 transition-all "></i><i
+                        class=""></i>
+                </div>
+                <div class="space-y-4">
+                    <a href="#" class="text-2xl font-medium">Magni Dolores</a>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                        cupiditate non provident</p>
+                </div>
+            </div>
+
+            <div class="flex space-x-3 mt-3">
+                <div class="">
+                    <i
+                        class="fa-regular fa-sun text-4xl bg-[#149ddd] text-white p-4 rounded-full hover:text-[#149ddd] hover:border-gray-950 hover:bg-zinc-300 transition-all"></i>
+                </div>
+                <div class="space-y-4">
+                    <a href="#" class="text-2xl font-medium">Nemo Enim</a>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                        cupiditate non provident</p>
+                </div>
+            </div>
+
+            <div class="flex space-x-3 mt-3">
+                <div class="">
+                    <i
+                        class="fa-regular fa-calendar-days text-4xl bg-[#149ddd] text-white p-4 rounded-full hover:text-[#149ddd] hover:border-gray-950 hover:bg-zinc-300 transition-all "></i>
+                </div>
+                <div class="space-y-4">
+                    <a href="#" class="text-2xl font-medium">Eiusmod Tempor</a>
+                    <p class="space-y-3">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+                        sint occaecati cupiditate non provident</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="px-20 md:px-60 my-12">
+        <h1 class="text-4xl text-blue-900">Contact Us</h1>
+        <div class="line h-1 w-16 bg-blue-700 my-2 mt-3"></div>
+        <div class="mt-6 text-zinc-700">
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+            in iste officiis commodi quidem hic quas.
+        </div>
+
+<div class="lg:flex lg:space-x-10">
+    <div class="shadow-lg border px-10 mt-10 ">
+        <div class="flex space-x-4">
+            <div class="mt-9">
+                <i class="fa-solid fa-location-dot  text-[#149ddd] text-2xl px-5 py-3 rounded-full bg-zinc-300  hover:bg-[#149ddd] hover:text-white transition-all"></i>
+            </div>
+            <div class="mt-9">
+                <h1 class="text-2xl font-medium">Location:</h1>
+                <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+        </div>
+        <div class="flex space-x-4">
+            <div class="mt-9">
+                <i class="fa-solid fa-envelope  text-[#149ddd] text-2xl px-4 py-3 rounded-full bg-zinc-300  hover:bg-[#149ddd] hover:text-white transition-all"></i>
+                <i class=""></i>
+            </div>
+            <div class="mt-9">
+                <h1 class="text-2xl font-medium">Email:</h1>
+                <p>info@example.com
+
+                </p>
+            </div>
+        </div>
+        <div class="flex space-x-4">
+            <div class="mt-9">
+                <i class="fa-solid fa-mobile-screen text-[#149ddd] text-2xl px-5 py-3 rounded-full bg-zinc-300  hover:bg-[#149ddd] hover:text-white transition-all"></i>
+                <i class=""></i>
+            </div>
+            <div class="mt-9">
+                <h1 class="text-2xl font-medium">Call:</h1>
+                <p>+1 5589 55488 55s</p>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.444007754358!2d72.8820402914209!3d21.214234831066282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f708087dd6f%3A0x919d01966f193394!2sLeonard%20Square!5e0!3m2!1sen!2sin!4v1686059826167!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mt-10"></iframe>
+   </div>
+
+
+   <div class="shadow-lg border px-10 mt-10 w-full" >
+    <div class="xl:flex flex-row lg:flex-row xl:space-x-3 space-x-0 mt-5">
+        <div class="flex flex-col">
+            <span>Your Name</span>
+            <input type="text" name="" id="y_name" class="border p-2 w-full">
+        </div>
+        <div class="flex flex-col mt-2 xl:mt-0">
+            <span>Email</span>
+            <input type="email" name="" id="y_email" class="border p-2 w-full">
+        </div>
+    </div>
+    <div class="flex flex-col mt-4">
+        <span>Subject</span>
+        <input type="text" name="" id="y_subject" class="border p-2">
+    </div>
+    <div class="flex flex-col mt-4">
+        <span>Message</span>
+        <textarea name="" id="" cols="30" rows="20" class="border"></textarea>
+    </div>
+    <div class="flex justify-center">
+        <button class="px-4 py-2 bg-[#149ddd] text-white mt-5">Send Message</button>
+    </div>
+   </div>
+</div>
+       
+    </div>
+    <script>
+        const sidebar = document.querySelector("aside");
+        const maxSidebar = document.querySelector(".max")
+        const miniSidebar = document.querySelector(".mini")
+        const roundout = document.querySelector(".roundout")
+        const maxToolbar = document.querySelector(".max-toolbar")
+        const logo = document.querySelector('.logo')
+        const content = document.querySelector('.content')
+        const moon = document.querySelector(".moon")
+        const sun = document.querySelector(".sun")
+
+        function setDark(val) {
+            if (val === "dark") {
+                document.documentElement.classList.add('dark')
+                moon.classList.add("hidden")
+                sun.classList.remove("hidden")
+            } else {
+                document.documentElement.classList.remove('dark')
+                sun.classList.add("hidden")
+                moon.classList.remove("hidden")
+            }
+        }
+
+        function openNav() {
+            if (sidebar.classList.contains('-translate-x-48')) {
+                // max sidebar 
+                sidebar.classList.remove("-translate-x-48")
+                sidebar.classList.add("translate-x-none")
+                maxSidebar.classList.remove("hidden")
+                maxSidebar.classList.add("flex")
+                miniSidebar.classList.remove("flex")
+                miniSidebar.classList.add("hidden")
+                maxToolbar.classList.add("translate-x-0")
+                maxToolbar.classList.remove("translate-x-24", "scale-x-0")
+                logo.classList.remove("ml-12")
+                content.classList.remove("ml-12")
+                content.classList.add("ml-12", "md:ml-60")
+            }
+            else {
+                // mini sidebar
+                sidebar.classList.add("-translate-x-48")
+                sidebar.classList.remove("translate-x-none")
+                maxSidebar.classList.add("hidden")
+                maxSidebar.classList.remove("flex")
+                miniSidebar.classList.add("flex")
+                miniSidebar.classList.remove("hidden")
+                maxToolbar.classList.add("translate-x-24", "scale-x-0")
+                maxToolbar.classList.remove("translate-x-0")
+                logo.classList.add('ml-12')
+                content.classList.remove("ml-12", "md:ml-60")
+                content.classList.add("ml-12")
+            }
+        }
+    </script>
+
+</body>
+
+</html>

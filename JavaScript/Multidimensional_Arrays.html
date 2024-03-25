@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multidimensional Arrays</title>
+</head>
+<body>
+    <script>
+        var ary =[
+            ["Shashwat",18,"Male","BCA"],
+            ["Miutansh",18,"Male","BCA"],
+            ["Dhrumil",18,"Male","BCA"],
+            ["Jaymin",18,"Male","BCA"]
+        ]
+        document.write("<table border='1px' cellspacing=0>")
+
+            // outline mate var a
+            for(var a = 0 ; a < ary.length; a++){
+                document.write("<tr>");
+            // inline mate var b
+            for(var b = 0; b < ary.length;b++){
+                document.write ( "<td>"+ ary[a][b]+"</td>");
+            }        
+                document.write("</tr>");
+
+            }
+            document.write("</table>")
+
+            document.write("<table border='1px' cellspacing=0>")
+
+            for(var a=1;a<=100;a=a+10){
+                document.write("<tr>");
+
+                for(var b=a; b < a + 10 ;b++){
+                    document.write("<td>"+b +"</td>");
+                }
+                document.write("</tr>");
+                document.write("<br>")
+            }
+            document.write("</table>")
+    </script>
+</body>
+</html>
